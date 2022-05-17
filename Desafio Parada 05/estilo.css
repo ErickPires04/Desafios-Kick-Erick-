@@ -1,0 +1,49 @@
+body{ background-color: #012030;} /* cor de fundo */
+
+h1{ color: #DAFDBA; /* Cor */
+    background-color: #13678A;
+    margin: 0px; /* Margem */
+    margin-left: 25%; /* Margem esquerda */
+    width: 51.3%; /* Largura */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 70px;} /* tamanho da fonte */
+
+#menu{ background-color: #45C4B0;
+       margin: 0px;
+       padding: 0px; /* Preenchimento */
+       overflow: hidden; /* Estouro/ Oculto */
+       list-style-type: none; /* Estilo de lista/ tipo / nenhum */
+       margin-left: 25%;
+       width: 51.3%;}
+
+#menu li{float: left;} /* Flutuar / Esquerda */
+
+#menu li a{display: block; /* Exibição / bloco */
+           padding: 10px;
+           text-align: center;
+           text-decoration: none; /* Decoração de texto / nenhuma */
+           margin-left: 95px;
+           font-size: 20px;}
+
+#menu li a:hover{transition: 00.5s; /* Transição */
+                  color: white;
+                  background-color: #DAFDBA;}
+
+article{ background-color: #DAFDBA;
+         margin: 0px;
+         margin-left: 25%;
+         width: 50%;
+        text-align: justify;
+        padding: 10px;}
+
+#estatua{ text-align: center;
+          font-size: 25px;
+          color:#13678A;}
+
+img{ width:100%;
+     margin-left: auto;
+    margin-right: auto; /* Margem direita */
+    display: block;}
+
+#referencia{ font-size: 10px;
+             margin: 0px;}
