@@ -1,0 +1,48 @@
+body{ background-image: url(../img/onda.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100%;}
+
+table{margin: auto;
+      width: 600px;}
+
+table tr td{padding: 10px;}
+
+.header_box{width: 50%;
+            height: 50%;
+            background-color: #0F163A;
+            text-align: center;}
+    
+#nav_box{margin: 0px;
+         padding: 0px;
+         height: 45px;
+         text-align: center;
+         background-color: #05135c;}
+
+#nav_box ul{list-style-type: none;
+            padding: 0px;
+            margin: 0px;}
+
+#nav_box li{float:left;
+            text-align: center;
+            width: 23%;}
+
+#nav_box a{padding: 10px;
+           text-decoration: none;
+           text-align: center;
+           color: white;}
+
+#nav_box a:hover{background-color: #07AFE8;
+            color: blue;
+            transition: 0.5s;}     
+            
+.article_box{padding: 10px;
+             background-color: #bedce7;}
+
+.article_box p{font-size: 18px;
+               text-align: justify;}           
+    
+#footer_box{text-align: center;
+            height: 50px;
+            background-color: #05135c;
+            color: white;}
