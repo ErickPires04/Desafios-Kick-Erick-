@@ -1,0 +1,124 @@
+body{background-image: url(../img/agua.jpg); /*imagem de fundo*/
+     background-repeat: no-repeat; /*Repetição de fundo: sem repetição*/
+     background-position: center center; /*Posição do fundo: centro*/
+     background-size: cover; /*Tamanho do fundo: capa*/
+     margin: 0px; /*Margem*/
+     padding: 0px;} /*Preenchimento*/
+
+
+.conteudo{margin: 0px;
+          padding: 0px;}
+
+.container{max-width: 1920px; /*Largura maxima*/
+           margin: auto; /*Margem: automatica*/
+           display: flex; /*Exibição: flexivel*/
+           align-items: center; /*Alinhar item: centro*/
+           justify-content: center;} /*Justificar conteudo: centro*/
+
+header{background-color: rgba(0, 0, 0, 0.895); /*Cor de fundo: preto*/
+       width: auto; /*Largura*/
+       padding: 20px;} /*Preenchimento*/
+
+.menu{width: 50%;} /*Largura*/
+
+.menu ul{list-style-type: none;}
+
+.menu li{float: left;}/*Flutuar: esquerda*/
+
+.menu nav a{color: white; /*Cor: branco*/
+            text-decoration: none; /*Decoração de texto: nenhuma*/
+            padding-right: 50px; /*Preenchimento direito*/
+            margin-left: 40px; /*Margim esquerda*/
+            font-size: 20px; /*Tamanho da fonte*/
+            position: relative;}
+
+.menu nav li a::after{content: " "; /*Conteudo*/
+                   width: 0%; /*Largura*/
+                   height: 4px; /*Altura*/
+                   background-color: rgb(18, 218, 244); /*Cor de fundo*/
+                   position: absolute; /*Posição: Absoluta*/
+                   top: 25px; /*Topo*/
+                   left: 0px; /*ESquerda*/
+                   border-radius: 30px;
+                   transition: 0.5s ease-in-out;} /*Transição: Facilidade de entrada*/
+
+.menu nav li a:hover::after{width: 100%;} /*Largura*/
+
+.menu nav li a:hover{color: rgb(65, 186, 238);}
+
+.logo{width: 50%; /*Largura*/
+      margin-left: 50px;} /*Margem esquerda*/
+
+.logo img{width: 50%;} /*Largura*/
+
+.botão{text-align: center;
+       margin-top: 100px;}
+
+.botão button{padding: 30px 40px;
+              background-color: black;
+              border: 1px solid white;
+              border-radius: 10px;
+              text-align: center;
+              cursor: pointer;
+              transition: 0.5s;}
+
+.botão button a{color: white;
+                text-decoration: none;
+                font-size: 24px;}
+
+.botão button:hover{background-color: rgba(3, 57, 158, 0.336);}
+
+.tex{text-align: center;}
+
+.tex h1{margin-top: 100px;
+        color: white;
+        font-size: 60px;}
+
+.tex h2{margin-top: 50px;
+        color: white;
+        font-size: 30px;}
+
+footer{background-color: rgba(0, 0, 0, 0.901);
+       margin-top: 117px;
+       padding: 20px;}
+
+.rodape{text-align: left;}
+
+.rodape a{text-decoration: none;
+          color: rgb(225, 221, 221);
+          margin-left: 30px;}
+
+.rodape a:hover{background-color: rgba(0, 255, 255, 0.551);
+                transition: 0.5s;
+                border-radius: 20px;
+                padding: 5px;}
+
+@media screen and (max-width:1440px){
+       .menu nav a{padding-right: 40px; /*Preenchimento direito*/
+                   margin-left: 0px; /*Margim esquerda*/}
+}
+
+@media screen and (max-width:768px){
+       .container{margin: auto; /*Margem: automatica*/
+                  display: flex; /*Exibição: flexivel*/
+                  flex-direction:column;
+                  align-items: center; /*Alinhar item: centro*/
+                  justify-content: center;} /*Justificar conteudo: centro*/
+
+       .logo{margin-right: 30px;
+              width: 80%;} /*Largura*/
+               
+       .logo img{width: 100%;} /*Largura*/
+
+       .menu li, a{text-align: center;
+                  padding: 5px;
+                  float:none;}/*Flutuar: esquerda*/
+
+       .menu nav a{color: white; /*Cor: branco*/
+            text-decoration: none; /*Decoração de texto: nenhuma*/
+            padding-right: 50px; /*Preenchimento direito*/
+            margin-left: 20px; /*Margim esquerda*/
+            font-size: 20px;} /*Tamanho da fonte*/
+
+       .menu nav li a:hover::after{width: 0%;} /*Largura*/
+}
